@@ -1,0 +1,145 @@
+/* https://9elements.github.io/fancy-border-radius/        --        BORDER RADIUS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    color: white;
+} 
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #02060D;
+}
+
+.container{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#INTERACT_PAGE{
+    background-color: #02060D;
+    height: 50em;
+    width: 75em;
+    border-radius: 20px;
+    display: flex;
+}
+
+#SWITCH_OVERLAY{
+    height: 50em;
+    width: 37.5em;
+    background-image: url(images/star.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0% 3% 3% 0% / 3% 3% 3% 3%;
+    transform: translateX(37.5em);
+    position: absolute;
+    overflow: hidden;
+    box-shadow: white -3px 0 10px 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transition: transform 1s ease, border-radius 1s ease, box-shadow 1s ease;
+}
+
+#SWITCH_IMAGE{
+    height: 100%;
+    width: 100%;
+}
+
+.INTERACT_BOX{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+#LOGIN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LOGIN_ICON{
+    height: 1em;
+    position: absolute;
+    transform: translate(0.7em, -1.95em);
+}
+
+#LOGIN_WELCOME{
+    font-family: "Special Gothic Condensed One";
+    transform: translateY(-4em);
+    font-size: 3em;
+}
+
+#LOGIN_BUTTON{
+    color: #000000;
+    background-color: #c4549e;
+    border-radius: 5px;
+    font-family: "Special Gothic Condensed One";
+    font-size: 15px;
+    padding: 13px;
+    border: none;
+    transform: translateY(10em);
+    cursor: pointer;
+}
+
+#LOGIN_BUTTON:hover{
+    background-color: #c482ae;
+    box-shadow: #c4549e 0 0 5px 0.5px;  
+    transition: 0.2s;
+}
+
+#FORM_LOGIN{
+    display: flex;
+    flex-direction: column;
+}
+
+.LOGIN_INPUT{
+    padding: 15px;
+    width: 35em;
+    border-radius: 7px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: black 0 5px 1px;
+    font-family: "Roboto Condensed";
+    color: rgba(0, 0, 0, 0.993);
+}
+
+.LOGIN_LABEL{
+    transform: translateY(-0.5em);
+    font-family: "Roboto Condensed";
+    color: rgba(253, 253, 253, 0.705);
+    font-size: 12px;
+}
+
+#SWITCH_BUTTON{
+    color: black;
+    border: white 2px solid;
+    background-color: transparent;
+    border-radius: 25px;
+    width: 15em;
+    padding: 15px;
+    font-size: 15px;
+    font-family: "Special Gothic Condensed One";
+    transform: translateY(18em);
+}
+
+#SWITCH_BUTTON:hover{
+    background-color: #eb8aba;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#SWITCH_MESSAGE{
+    color: black;
+    font-family: "Special Gothic Condensed One";
+    transform: translateY(-5em);
+    font-size: 3em;
+}
