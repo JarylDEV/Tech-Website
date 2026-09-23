@@ -14,7 +14,19 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #02060D;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ASTRONAUT{
+    position: absolute;
+    z-index: -1;
+    height: 25em;
+    right: -7em;
+    top: 15em;
+    rotate: -50deg;
+    animation: bounce 10s infinite ease-in-out;
 }
 
 .container{
@@ -23,7 +35,7 @@ body{
 }
 
 #INTERACT_PAGE{
-    background-color: #02060D;
+    background-color: black;
     height: 50em;
     width: 75em;
     border-radius: 20px;
@@ -56,7 +68,7 @@ body{
 
 .INTERACT_BOX{
     height: 100%;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -64,6 +76,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
+#LOGIN_ANIMATE{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
 }
 
 .LOGIN_ICON{
@@ -142,4 +162,96 @@ body{
     font-family: "Special Gothic Condensed One";
     transform: translateY(-5em);
     font-size: 3em;
+}
+
+#LOGIN_WELCOME, .LOGIN_LABEL, .LOGIN_INPUT, .LOGIN_ICON, #LOGIN_BUTTON{
+    transition: transform 1s ease;
+}
+
+#SIGNUP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-35em);
+    transition: transform 1s ease;
+}
+
+#SIGNUP_ANIMATE{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.SIGNUP_ICON{
+    height: 1em;
+    position: absolute;
+    transform: translate(0.7em, 1em);
+}
+
+#SIGNUP_WELCOME{
+    font-family: "Special Gothic Condensed One";
+    transform: translateY(-3em);
+    font-size: 3em;
+}
+
+#SIGNUP_BUTTON{
+    color: #000000;
+    background-color: #c4549e;
+    border-radius: 5px;
+    font-family: "Special Gothic Condensed One";
+    font-size: 15px;
+    padding: 13px;
+    border: none;
+    transform: translateY(10em);
+    cursor: pointer;
+}
+
+#SIGNUP_BUTTON:hover{
+    background-color: #c482ae;
+    box-shadow: #c4549e 0 0 5px 0.5px;  
+    transition: 0.2s;
+}
+
+#FORM_SIGNUP{
+    display: flex;
+    flex-direction: column;
+}
+
+.SIGNUP_INPUT{
+    padding: 15px;
+    width: 35em;
+    border-radius: 7px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: black 0 5px 1px;
+    font-family: "Roboto Condensed";
+    color: rgba(0, 0, 0, 0.993);
+}
+
+.SIGNUP_LABEL{
+    transform: translateY(-0.5em);
+    font-family: "Roboto Condensed";
+    color: rgba(253, 253, 253, 0.705);
+    font-size: 12px;
+}
+
+#SIGNUP_CHECKBOX{
+    transform: translate(-16em, 0.5em);
+    z-index: 2;
+}
+
+#SIGNUP_CHECKBOXLABEL{
+    padding-left: 36px;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(2em);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

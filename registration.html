@@ -10,33 +10,42 @@
     <body>
         <div>
             <div class="container">     
+                <image src="images/astronaut.png" id="ASTRONAUT"></image>
                 <div id="INTERACT_PAGE">
                     <div id="SWITCH_OVERLAY">
                         <h1 id="SWITCH_MESSAGE">Don't have an account?</h1>
                         <button id="SWITCH_BUTTON">Sign up</button>
                     </div>
-
-                    <div id="LOGIN" class="INTERACT_BOX">
-                        <form id="FORM_LOGIN">
-                            <h1 id="LOGIN_WELCOME">Welcome back</h1>
-                            <label class="LOGIN_LABEL">Email address</label>
-                            <input type="text" class="LOGIN_INPUT" id="LOGIN_EMAIL" placeholder="abcd@gmail.com" required><i><img src="images/email.png" class="LOGIN_ICON"></i>
-                            <br>
-                            <label class="LOGIN_LABEL">Password</label>
-                            <input type="password" class="LOGIN_INPUT" id="LOGIN_PASSWORD" placeholder="Enter your password" required><i><img src="images/lock.png" class="LOGIN_ICON"></i>
-                            <button id="LOGIN_BUTTON">Sign in</button>
-                        </form>
-                    </div>
                     
-                    <div id="SIGNUP" class="INTERACT_BOX">
-                        <form id="FORM_SIGNUP">
-                            <label>Full Name</label>
-                            <input type="text">
-                            <label>Email Address</label>
-                            <input type="text">
-                            <label>password</label>
-                            <input type="password">
-                        </form>
+                    <div id="LOGIN_ANIMATE">
+                        <div id="LOGIN" class="INTERACT_BOX">
+                            <form id="FORM_LOGIN">
+                                <h1 id="LOGIN_WELCOME">Welcome back</h1>
+                                <label class="LOGIN_LABEL">Email address</label>
+                                <input type="text" class="LOGIN_INPUT" id="LOGIN_EMAIL" placeholder="abcd@gmail.com" required><i><img src="images/email.png" class="LOGIN_ICON"></i>
+                                <br>
+                                <label class="LOGIN_LABEL">Password</label>
+                                <input type="password" class="LOGIN_INPUT" id="LOGIN_PASSWORD" placeholder="Enter your password" required><i><img src="images/lock.png" class="LOGIN_ICON"></i>
+                                <button id="LOGIN_BUTTON">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="SIGNUP_ANIMATE">
+                        <div id="SIGNUP" class="INTERACT_BOX">
+                            <form id="FORM_SIGNUP">
+                                <h1 id="SIGNUP_WELCOME">Hello there!</h1>
+                                <label class="SIGNUP_LABEL">Full Name</label><i><img src="images/user.png" class="SIGNUP_ICON"></i>
+                                <input type="text" class="SIGNUP_INPUT" id="SIGNUP_NAME" placeholder="Storm123"><br>
+                                <label class="SIGNUP_LABEL">Email Address</label><i><img src="images/email.png" class="SIGNUP_ICON"></i>
+                                <input type="text" class="SIGNUP_INPUT" id="SIGNUP_EMAIL" placeholder="example@gmail.com" required><br>
+                                <label class="SIGNUP_LABEL">Password</label><i><img src="images/lock.png" class="SIGNUP_ICON"></i>
+                                <input type="password" class="SIGNUP_INPUT" id="SIGNUP_PASSWORD" placeholder="Enter your password"><br>
+                                <input type="checkbox" id="SIGNUP_CHECKBOX" required>
+                                <label id="SIGNUP_CHECKBOXLABEL" class="SIGNUP_LABEL">Do you agree to <u>terms & services.</u></label>
+                                <button id="SIGNUP_BUTTON">Signup</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
