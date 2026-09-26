@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
     <title>Homepage</title>
 </head>
-<body>
-    
-</body>
+    <body>
+        <div id="CART_POPUP">
+            <div id="IMAGE_CONT">
+                <img id="IMAGE_HOLDER" src="">
+                <button id="REMOVE">Remove</button>
+            </div>
+        </div>
+        <div id="MAIN_CONTAINER" class="CONTAINER">
+            <div id="HEADER">
+                <ul>
+                    <li>
+                        <a id="CART"><img src="images/cart.png" id="CART_IMAGE"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <h1 id="TITLE">CERYLIANMERXON TECHNOLOGIES</h1>
+            <h3 id="USER_TITLE"></h3>
+            <div id="INFO_CONT" class="INFO"> <br>
+                <div id="INFO_LINKS">
+                    <ul id="INFO_UL">   
+                        <li ><a id="HOME" class="LINKS">—  Home</a></li><br>
+                        <li ><a id="PRODUCT" class="LINKS" href="#SECOND_CONTAINER">—  Products</a></li>
+                    </ul>
+                </div>
+
+                <div id="INFO_DESCRIPTION" class="INFO">
+                    <p id="INFO_PARA">Cerylianmerxon Technologies. A trusted name in the technology industry. We provide high-quality keyboards, mice, and a wide range of innovative tech products designed to meet the needs of gamers. With a strong commitment to quality, reliability, and customer satisfaction, we continue to push the boundaries of technology. We don’t just keep up with the tech industry,  we lead it. At Cerilianmerxon Technologies, we build products you can rely on and a brand you can trust. Get your Ceryliamerxon Equiptment now!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="SECOND_CONTAINER" class="CONTAINER">
+            <div id="SECOND_HEADER">
+                <div id="KEYBOARD" class="PRODUCTS"><a id="KEYBOARD_INTERACT" class="TECH"><img src="images/keyboard1.png" id="KEYBOARD_IMAGE"></a></div>
+                <div id="MOUSE" class="PRODUCTS"><a id="MOUSE_INTERACT" class="TECH"><img src="images/mouse.png" id="MOUSE_IMAGE"></a></div>
+                <div id="HEADSET" class="PRODUCTS"><a id="HEADSET_INTERACT" class="TECH"><img src="images/headest.png" id="HEADSET_IMAGE"></a></div>
+            </div>
+
+            <div id="ITEMS_CONT">
+                <div id="CONT1">
+                    <div id="IMAGE1_CONT">
+                        <img id="IMAGE1" src="">
+                        <h3 id="PRICE1"></h3>
+                        <button id="IMAGE1_BUTTON">Add to cart</button>
+                    </div>
+                    
+                    <div IMAGE2_CONT>
+                        <img id="IMAGE2" src="">
+                        <h3 id="PRICE2"></h3>
+                        <button id="IMAGE2_BUTTON">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

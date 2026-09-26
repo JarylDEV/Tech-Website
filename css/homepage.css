@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 100vw;
+    background-color: #02060D;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.CONTAINER{
+    width: 100%;
+}
+
+#MAIN_CONTAINER{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    background-image: url(/images/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+#SECOND_CONTAINER{
+    position: relative;
+    min-height: 100vh;
+    background-color: #02060D;
+    z-index: 2;
+}
+
+#HEADER{
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 5em;
+    width: 100%;
+    transform: translateY(-5em);
+    transition: transform 1.5s ease;
+}
+
+#CART_POPUP{
+    position: fixed;
+    border-radius: 25px;
+    height: 50em;
+    width: 80em;
+    background-color: #02060D;
+    box-shadow: 0px 4px 15px rgba(243, 243, 243, 0.877);
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150em, -50%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    display: flex;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#CART_POPUP.HIDE_CART{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+#CART{
+    cursor: pointer;
+}
+
+#CART_IMAGE:hover{
+    transform: scale(1.4);
+}
+
+#CART_IMAGE{
+    height: 15px;
+    width: 15px;
+    transition: transform 0.2s ease
+}
+
+#TITLE{
+    position: absolute;
+    color: rgb(214, 213, 213);
+    font-size: 30px;
+    font-family: "Bungee";
+    transform: translate(4em, 5em);
+    display: none;
+}
+
+#USER_TITLE{
+    position: absolute;
+    color: rgb(214, 213, 213);
+    font-size: 30px;
+    font-family: "Bungee";
+    transform: translate(5em, 7em);
+    display: none;
+}
+
+#INFO_CONT{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#INFO_LINKS{
+    height: 30%;
+    width: 30%;
+    transform: translate(-50em, 20em);
+    display: flex;
+    align-items: center;
+    transition: transform 1.5s ease;
+}
+
+.LINKS{
+    display: inline-block;
+    font-size: 1em;
+    color: rgb(214, 213, 213);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#INFO_DESCRIPTION{
+    overflow: hidden;
+    height: 50%;
+    width: 30%;
+    transform: translate(10em, 20em);
+    display: none;
+}
+
+#INFO_PARA{
+    color: rgb(214, 213, 213);
+    font-size: 30px;
+    font-family: "Special Gothic Condensed One";
+}
+
+.LINKS:hover{
+    transform: scale(1.3);
+}
+
+
+#SECOND_HEADER{
+    height: 8em;
+    width: 100%;
+    background-color: rgb(110, 110, 116);
+    /* box-shadow: 0px 0px 10px 2px white; */
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.PRODUCTS{
+    height: 20em;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#KEYBOARD_IMAGE{
+    height: 20em;
+    width: 25em;
+    transform: translateY(-6em);
+}
+
+#MOUSE_IMAGE{
+    height: 15em;
+    width: 18em;
+    transform: translateY(-3.5em) rotate(-75deg);
+}
+
+#HEADSET_IMAGE{
+    height: 10em;
+    width: 13em;
+    transform: translateY(-1em);
+}
+
+.TECH{
+    cursor: pointer;
+}
+
+#CONT1{
+    display: flex;
+    transform: translateY(10em);
+}
+
+#IMAGE1, #IMAGE2, #IMAGE1_BUTTON, #IMAGE2_BUTTON{
+    display: none;
+}
+
+#IMAGE1_CONT{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#IMAGE1_BUTTON{
+    height: 3em;
+    width: 25em;
+    border-radius: 5px;
+    background-color: rgb(38, 153, 38);
+    border: none;
+    color: rgb(226, 208, 208);
+    font-family: "Bungee";
+    cursor: pointer;
+    position: absolute;
+    transform: translate(0em, 28em);
+}
+
+#IMAGE1_BUTTON:hover{
+    background-color: rgb(75, 177, 75);
+    box-shadow: 0px 0px 2px 2px white;
+    transition: 0.2s ease;
+}
+
+#IMAGE2_CONT{
+    display: flex;
+    flex-direction: column;
+}
+
+#IMAGE2_BUTTON{
+    height: 3em;
+    width: 25em;
+    border-radius: 5px;
+    background-color: rgb(38, 153, 38);
+    border: none;
+    color: rgb(226, 208, 208);
+    font-family: "Bungee";
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-30em, 45em);
+}
+
+#IMAGE2_BUTTON:hover{
+    background-color: rgb(75, 177, 75);
+    box-shadow: 0px 0px 2px 2px white;
+    transition: 0.2s ease;
+}
+
+#PRICE1, #PRICE2{
+    color: white;
+    position: absolute;
+    display: none;
+}
+
+#PRICE1{
+    transform: translate(-4.5em ,15em);
+}
+
+#PRICE2{
+    transform: translate(6em, 0.6em);
+}
+
+#REMOVE{
+    height: 3em;
+    width: 25em;
+    border-radius: 5px;
+    background-color: rgb(153, 38, 38);
+    border: none;
+    color: rgb(226, 208, 208);
+    font-family: "Bungee";
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+
+.CART_BUTTON{
+    display: block !important; 
+    margin-top: 10px;
+}
